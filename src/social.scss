@@ -1,0 +1,85 @@
+// Mixins
+@import "mixins";
+:host{
+	display: block;
+}
+
+social-media :host{
+	display: block;
+}
+
+social-media :host :hover{
+	#social1{@include i-pos(0em, 0, 0, 10em); }
+    #social2{@include i-pos(2em, 0, 0, 10em);} 
+    #social3{@include i-pos(4em, 0, 0, 10em);}   
+    #social4{@include i-pos(6em, 0, 0, 10em);}
+}
+/**************	Normal **************/
+
+// 
+
+	.profile{
+		padding-top: 15px;
+	    padding-bottom: 0px;
+	    overflow:hidden;
+	    .small-6 {}
+	    .large-6 {}
+	    .columns {}
+
+	    div{
+		    h4{
+		      font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+		      font-weight: 400;
+		      color: #fff;
+		      font-size: 30px;
+		      line-height:26px;
+		      span{
+		        font-size: 20px;
+		        color: #8C91A7;
+		        display: block;
+		      }
+		    }
+		    img{
+		      border-radius: 50%;
+		      border: 4px solid #69708C;
+		    }
+		    p{
+		      font-size: 16px;
+		      margin-bottom: 0;
+		      color: #8C91A7;
+		      }
+		    i{
+		      font-size: 26px;
+		      vertical-align:middle;
+		      padding-right: 5px;
+		      color: #394165;
+		    }	
+	    }
+	}
+
+
+	.profile social-media:shadow{
+
+	}
+/**************	Normal **************/
+
+
+
+
+// social-profile::shadow social-media::shadow{
+// 	()
+// }
+
+
+
+
+
+/////////////////////// Tree  \\\\\\\\\\\\\\\\\\\\\\\
+// 	<social-profile>
+// 	div.profile
+// 		div
+// 			h3 + img
+// 		div.s-media
+// 			<social-media> id=social 1-4
+// 				Shadow DOM #2
+/////////////////////// DOM Tree  \\\\\\\\\\\\\\\\\\\\\\\

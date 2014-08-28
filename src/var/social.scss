@@ -1,0 +1,215 @@
+@import "../mixins";
+
+.li-none{
+  list-style:none;
+}
+
+.social{
+  // margin: auto; 
+  // position:relative; 
+  // overflow:hidden;
+  // top: 0em; left: 0em;
+  //@include transition-delay(0.5);
+  // @include transition(all, 0.5s, ease-in-out);
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .s-media{
+    #linkedin {@include transition-delay(0.5);visibility: hidden;}
+    #github   {@include transition-delay(0.5);visibility: hidden;}
+    #twitter  {@include transition-delay(0.5);visibility: hidden;}
+    #facebook {@include transition-delay(0.5);visibility: hidden;}
+    #youtube  {@include transition-delay(0.5);visibility: hidden;}
+  }
+
+  /**/
+  &:hover{
+     #facebook{@include i-pos(0em, 0, 0, 0em); }
+     #linkedin{@include i-pos(0em, 0, 0, 0em); }
+     #github{@include i-pos(0em, 0, 0, 0em);} 
+     #youtube{@include i-pos(0em, 0, 0, 0em);}   
+     #twitter{@include i-pos(0em, 0, 0, 0em);}
+     // style icons
+     i.fi-social-linkedin,.fi-social-github,.fi-social-twitter,.fi-social-youtube{font-size: 40px;}
+     i.fi-social-github{color: black;}
+     i.fi-social-youtube{color: red;}
+  }
+}
+.social-vert{
+  //@include transition(all, 0.3s, ease-in-out);
+  position:relative; 
+  top: 0em; left: 0em;
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .s-media{
+    position:relative;
+    top: 0em; left: 0em;
+    @include transition(all, 0.3s, ease-in-out);
+
+    a{
+      // Initial Position
+       @include i-pos(-6em, 0, 0, 10em);
+    }
+    #linkedin {
+      @include transition-delay(0.5);visibility: hidden;}
+    #github   {
+      @include transition-delay(0.5);visibility: hidden;}
+    #twitter  {
+      @include transition-delay(0.5);visibility: hidden;}
+    #facebook {
+      @include transition-delay(0.5);visibility: hidden;}
+    #youtube  {
+      @include transition-delay(0.5);visibility: hidden;}
+  }
+  .s-media{
+    a{
+      //each link MUST have transition.
+      @include transition(all, 0.3s, ease-in-out);
+    }
+  }
+
+  /**/
+  &:hover{
+     #facebook{@include i-pos(-12em, 0, 0, 21em); }
+     #linkedin{@include i-pos(-10em, 0, 0, 21em); }
+     #github{@include i-pos(-8em, 0, 0, 21em);} 
+     #youtube{@include i-pos(-6em, 0, 0, 21em);}   
+     #twitter{@include i-pos(-4em, 0, 0, 21em);}
+     // style icons
+     i.fi-social-linkedin,.fi-social-github,.fi-social-twitter,.fi-social-youtube{font-size: 40px;}
+     i.fi-social-github{color: black;}
+     i.fi-social-youtube{color: red;}
+  }
+}
+
+.social-horz{
+  // margin: auto; 
+  // position:relative; 
+  // overflow:hidden;
+  // top: 0em; left: 0em;
+  //@include transition-delay(0.5);
+  // @include transition(all, 0.5s, ease-in-out);
+  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .s-media{
+    #linkedin {@include transition-delay(0.5);visibility: hidden;}
+    #github   {@include transition-delay(0.5);visibility: hidden;}
+    #twitter  {@include transition-delay(0.5);visibility: hidden;}
+    #facebook {@include transition-delay(0.5);visibility: hidden;}
+    #youtube  {@include transition-delay(0.5);visibility: hidden;}
+  }
+
+  /**/
+  &:hover{
+     #facebook{@include i-pos(7em, 0, 0, 0em); }
+     #linkedin{@include i-pos(7em, 0, 0, 0em); }
+     #github{@include i-pos(7em, 0, 0, 2em);} 
+     #youtube{@include i-pos(7em, 0, 0, 4em);}   
+     #twitter{@include i-pos(7em, 0, 0, 6em);}
+     // style icons
+     i.fi-social-linkedin,.fi-social-github,.fi-social-twitter,.fi-social-youtube{font-size: 40px;}
+     i.fi-social-github{color: black;}
+     i.fi-social-youtube{color: red;}
+  }
+}
+
+
+
+//
+.bump{
+  margin-top: 50px;
+  padding-right: 30px;
+  padding-left:30px;
+}
+
+.profile-card{
+  padding-top: 15px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  background: #2B2937;
+  overflow:hidden;
+  h4{
+    font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 30px;
+    line-height:26px;
+    span{
+      font-size: 20px;
+      color: #8C91A7;
+      display: block;
+    }
+  }
+  img{
+    border-radius: 50%;
+    border: 4px solid #69708C;
+  }
+  .button-group{
+    width: 101%;
+    .button{
+      margin-bottom: 0;
+      border-top: none;
+      border-left: none;
+      border-right: 2px solid #2B2937;
+      border-bottom: none;
+      background-color: #394165;
+      height: 80px;
+      padding-top: 15px;
+      margin-top: 20px;
+      font-weight:200;
+      font-size: 16px;
+      line-height: 26px;
+      color: #8C91A7;
+      box-shadow: none;
+      span{
+       display: block;
+       font-size: 24px;
+       font-weight: 600;
+       color:#fff;
+      }
+    }
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #8C91A7;
+    }
+  i{
+    font-size: 26px;
+    vertical-align:middle;
+    padding-right: 5px;
+    color: #394165;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .profile-card{
+    img{
+     margin-left:auto;
+     margin-right:auto;
+     width:40%;
+    }
+    h4, p{
+      text-align: center;
+    }
+    .button-group .button{
+      font-size: 14px;
+      span{
+        font-size: 20px
+      }
+    }
+  }
+}
+
+

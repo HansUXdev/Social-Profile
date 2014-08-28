@@ -1,0 +1,67 @@
+<!-- Import Polymer -->
+<link rel="import" href="../../components/polymer/polymer.html">
+
+
+<link rel="import" href="../../src/social-media.html">
+
+
+
+<!-- Define your custom element -->
+<polymer-element name="exec-profile" attributes="name img description title">
+<!-- attributes="href name img" -->
+    <template>
+        <!-- <link rel="stylesheet" href="../style/social.css"> -->
+        <link rel="stylesheet" href="../style/exec-profile.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css">
+
+        <link rel="stylesheet" href="css/foundation-icons.css" />
+
+        <!-- quick fixes -->
+        <style>
+        #social1,#social2,#social3,#social4{
+            max-height: 36px;
+            max-width: 30px;
+        }
+        </style>
+
+        <div class="small-block-grid-1 medium-block-grid-2 profile-card social">
+            <li class="li-none">
+                <img src="{{img}}">
+            </li>
+            <!-- Info -->
+            <li class="li-none info">
+                <h4>{{name}}<span>{{title}}<!-- President of XPTO --></span></h4>
+                <p class="description">{{description}}</p>
+                <div class="s-media">
+                    <a href="" id="social1">
+                        <i class="lg fi-linkedin"></i>
+                    </a>
+                    <a href="" id="social2" >
+                        <i class="lg fi-social-github"></i> 
+                    </a>
+                    <a href="" id="social3">
+                        <i class="lg fi-social-twitter"></i>
+                    </a>
+                    <!-- <a href="" id="social4">
+                        <i class="lg fi-social-twitter"></i>
+                    </a>  -->
+                </div>
+            </li>
+        </div>	
+
+
+    </template>
+
+    <script>
+    Polymer('exec-profile', {
+    	/* 
+    	ready: function (){
+    		img: '',
+    		name: ''
+    	}
+    	*/
+
+    });</script>
+
+</polymer-element>

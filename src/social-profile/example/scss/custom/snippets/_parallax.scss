@@ -1,0 +1,134 @@
+/////////////////////////////////////////
+#parallax{
+	// background: url(../assets/img/bg.PNG) no-repeat center center fixed;
+	@include bg-size(cover);
+	padding-bottom: 0;
+	padding-top: 140px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+
+#parallax .mobile {
+	background-image: url(../assets/img/mobile.png);
+    background-repeat: no-repeat;
+    height: 499px;
+    margin-left: -96px;
+    margin-top: 0;
+    overflow: hidden;
+    width: auto;
+}
+	.parallax h1 {
+		color: #fff;
+	    font-size: 54px;
+	    font-weight: 700;
+		text-shadow: 0 1px 5px #222222;
+	}
+	.parallax h2 {
+		color: #fff;
+		font-weight: 300;
+		text-shadow: 0 1px 5px #222222;
+		margin-bottom: 30px;
+	}
+	.parallax .actionBtn .line1 {
+		display: inline-block;
+	    font-size: 14px;
+	    font-weight: 400;
+	    width: 140px;
+		margin-top: 10px;
+	}
+	.parallax .actionBtn .line2 {
+		font-size: 28px;
+	    font-weight: 700;
+		line-height: 1;
+		
+	}
+	#parallax h1 {
+		color: #fff;
+	    font-size: 54px;
+	    font-weight: 700;
+		text-shadow: 0 1px 5px #222222;
+	}
+	#parallax h2 {
+		color: #fff;
+		font-weight: 300;
+		text-shadow: 0 1px 5px #222222;
+		margin-bottom: 30px;
+	}
+	#parallax .actionBtn .line1 {
+		display: inline-block;
+	    font-size: 14px;
+	    font-weight: 400;
+	    width: 140px;
+		margin-top: 10px;
+	}
+	#parallax .actionBtn .line2 {
+		font-size: 28px;
+	    font-weight: 700;
+		line-height: 1;
+		
+	}
+
+.btn-success {
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+}
+
+//////////////////////////
+/**********************************************************************/
+/****************** MEDIA QUERIES ************************************/
+/********************************************************************/
+
+@media(max-width:1200px){
+	#parallax .mobile {
+		margin-left: -164px;
+		width: 560px !important;
+		// max-width: 560px;
+	}
+}
+@media(max-width:979px){
+	#parallax {
+		padding-top: 100px;
+	}
+	#parallax .txt {
+		text-align: center;
+	}
+	#parallax h1 {
+		font-size: 45px !important;
+	}
+	#parallax .actionBtn {
+		margin-bottom: 50px;
+	}
+	#parallax .mobile {
+		margin-left: -48px;
+		position: relative;
+		left: 2em;
+	}
+}
+@media (max-width: 767px) {
+	#parallax {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#parallax h1 {
+		font-size: 48px;
+	}
+	#parallax h2 {
+		font-size: 22px;
+	}
+}
+
+
+// position appslider
+@media(max-width:1200px){
+	#topWrap#parallax .mobile{
+
+	}
+}
+
+
+
+
+
+/////////////////

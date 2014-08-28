@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sass + Polymer</title>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="components/platform/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <!-- <link rel="import" href="src/my-element.html"> -->
+    <!-- Test element -->
+
+    <!-- <link rel="import" href="elements/test/test-element.html"> -->
+    <link rel="import" href="src/social-profile/social-profile.html">
+    <link rel="import" href="src/social-profile/exec-profile.html">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css"/>
+    <link rel="stylesheet" href="framework/css/foundation-icons.css" />
+    <link rel="stylesheet" href="framework/css/profile.css"/>
+</head>
+<body>
+    
+    <!-- Using Custom Elements -->
+    <h1>What it should look like:</h1>
+        <div class="small-block-grid-1 medium-block-grid-2 profile-card social">
+            <li class="">
+                <img src="assets/128.jpg" alt="profile image">   
+            </li>
+            <!-- Info -->
+            <li class="info">
+                <h4>{{name}} <span>{{title}}</span></h4>
+                <p class="description">
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+                </p>
+                <div class="s-media">
+                    <a href="www.linkedin.com" id="social1">
+                        <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                    <a href="www.github.com" id="social2" >
+                        <i class="lg fi-social-github"></i> 
+                    </a>
+                    <a href="" id="social3">
+                        <i class="lg fi-social-twitter"></i>
+                    </a>
+                    <a href="#" id="social4" data-reveal-id="youtube">
+                        <i class="lg fi-social-youtube"></i>
+                    </a>   
+                </div>
+            </li>
+        </div>
+
+    <h1>Testing <code> < Social-Profile > </code></h1>
+        <social-profile name="hans" img="assets/128.jpg"></social-profile>
+    
+    <h1>Testing <code> < Exec-Profile > </code></h1>
+        <exec-profile 
+        name="Hans McMurdy" 
+        img="assets/128.jpg"
+        description="Would really love a job that involves testing custom elements for specific frameworks."
+        title="Front-End Developer"
+        ></exec-profile>
+
+
+    <!--  -->
+    <!-- <social-profile></social-profile>  -->
+</body>
+</html>

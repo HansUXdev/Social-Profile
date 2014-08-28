@@ -1,0 +1,131 @@
+@import "mixins";
+:host{
+  
+  @media only screen and (max-width: 767px){
+        #social1{@include imp-pos(8em, 0, 0, 4em); }
+        #social2{@include imp-pos(8em, 0, 0, 6em);} 
+        #social3{@include imp-pos(8em, 0, 0, 8em);}   
+        #social4{@include imp-pos(8em, 0, 0, 10em);}
+  }
+  // Media Querries
+  @media only screen and (max-width: 767px){
+    .profile-card{
+      img{
+       margin-left:auto;
+       margin-right:auto;
+       width:40%;
+       @include pos-r(0em, 0, 0, 5em);
+      }
+      h4, p{
+        text-align: center;
+      }
+      // Bottom Row
+      .button-group .button{
+        font-size: 14px;
+        span{
+          font-size: 20px
+        }
+      }
+    }
+  }
+
+  .bump{
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-left:30px;
+  }
+
+  .profile-card{
+    padding-top: 15px;
+    padding-bottom: 0px;
+    overflow:hidden;
+    h4{
+      font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 30px;
+      line-height:26px;
+      span{
+        font-size: 20px;
+        color: #8C91A7;
+        display: block;
+      }
+    }
+    img{
+      border-radius: 50%;
+      border: 4px solid #69708C;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 0;
+      color: #8C91A7;
+      }
+    i{
+      font-size: 26px;
+      vertical-align:middle;
+      padding-right: 5px;
+      color: #394165;
+    }
+  }
+
+  .social{
+    //@include transition(all, 0.3s, ease-in-out);
+    position:relative; 
+    top: 0em; left: 0em;
+    /* img{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }*/
+
+    .s-media{
+      @include transition(all, 0.3s, ease-in-out);
+
+      a{
+        // Initial Position
+         @include i-pos(-6em, 0, 0, 10em);
+      }
+      #social1 {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social2   {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social3  {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social4 {
+        @include transition-delay(0.5);visibility: hidden;}
+    }
+    .s-media{
+      a{
+        //each link MUST have transition.
+        @include transition(all, 0.3s, ease-in-out);
+      }
+    }
+
+    /**/
+    &:hover{
+      // Horizontal - for fullscreen
+        #social1{@include i-pos(0em, 0, 0, 10em); }
+        #social2{@include i-pos(2em, 0, 0, 10em);} 
+        #social3{@include i-pos(4em, 0, 0, 10em);}   
+        #social4{@include i-pos(6em, 0, 0, 10em);}
+        i.lg{font-size: 40px;}
+
+        // Basic Icon Styling
+        i.fi-social-github{color: black;}
+        i.fi-social-youtube{color: #de2826;}
+        i.fi-social-twitter{color: #55acee;}
+        i.fi-social-linkedin{color: #1b86bd;}
+        //
+    }
+  }
+}
+
+/////////////////////////////////////
+
+
+
+
+
+
+
+

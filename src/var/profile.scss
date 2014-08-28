@@ -1,0 +1,287 @@
+@import "../mixins";
+
+
+
+header {
+    background: url(https://raw.githubusercontent.com/HansUXdev/portfolio/gh-pages/assets/img/bigBG.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // text-align: center;
+    // color: #fff;
+    // background: $header-bg;
+    position: relative;
+    bottom: 0em;
+    
+    .container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    img {
+        display: block;
+        margin: 0 auto 20px;
+        /*Make Circle*/
+        border-radius: 50%;
+    }
+    .intro-text .name {
+        display: block;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .intro-text .skills {
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding: 200px 0 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 5em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+
+
+
+
+
+// Social Buttons
+  .btn-outline {
+      margin-top: 15px;
+      border: solid 2px #fff;
+      font-size: 20px;
+      color: #fff;
+      background: 0 0;
+      transition: all .3s ease-in-out;
+  }
+
+  .btn-outline:hover,
+  .btn-outline:focus,
+  .btn-outline:active,
+  .btn-outline.active {
+      border: solid 2px #fff;
+      color: #18bc9c;
+      background: #fff;
+  }
+  .btn-social {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 20px;
+      line-height: 45px;
+  }
+
+  .btn:focus,
+  .btn:active,
+  .btn.active {
+      outline: 0;
+  }
+
+  // .scroll-top {
+  //     z-index: 1049;
+  //     position: fixed;
+  //     right: 2%;
+  //     bottom: 2%;
+  //     width: 50px;
+  //     height: 50px;
+  // }
+
+  // .scroll-top .btn {
+  //     width: 50px;
+  //     height: 50px;
+  //     border-radius: 100%;
+  //     font-size: 20px;
+  //     line-height: 28px;
+  // }
+
+  // .scroll-top .btn:focus {
+  //     outline: 0;
+  // }
+
+
+
+
+
+//////////////////////////////////////
+  // Breakpoint notes
+  /*
+  1). 1025w (less then)
+      -- CENTER "social"
+      -- CENTER "info"
+  2). 762w (less then)
+      -- CENTER "img" 
+  */ 
+
+  ////////////////   Foundation   \\\\\\\\\\\\\\\\\\\\
+    // Small screens
+    @media only screen { } /* Define mobile styles */
+
+    @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+    // Medium screens
+    @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+    // Large screens
+    @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+    @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+    // XLarge screens
+    @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+    @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+    // XXLarge screens
+    @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+    
+  ////////////////   Foundation   \\\\\\\\\\\\\\\\\\\\
+
+
+  @media only screen and (max-width: 767px){
+        #social1{@include imp-pos(8em, 0, 0, 4em); }
+        #social2{@include imp-pos(8em, 0, 0, 6em);} 
+        #social3{@include imp-pos(8em, 0, 0, 8em);}   
+        #social4{@include imp-pos(8em, 0, 0, 10em);}
+  }
+  // Media Querries
+  @media only screen and (max-width: 767px){
+    .profile-card{
+      img{
+       margin-left:auto;
+       margin-right:auto;
+       width:40%;
+       @include pos-r(0em, 0, 0, 5em);
+      }
+      h4, p{
+        text-align: center;
+      }
+      // Bottom Row
+      .button-group .button{
+        font-size: 14px;
+        span{
+          font-size: 20px
+        }
+      }
+    }
+  }
+
+  .bump{
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-left:30px;
+  }
+
+  .profile-card{
+    padding-top: 15px;
+    padding-bottom: 0px;
+    overflow:hidden;
+    h4{
+      font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 30px;
+      line-height:26px;
+      span{
+        font-size: 20px;
+        color: #8C91A7;
+        display: block;
+      }
+    }
+    img{
+      border-radius: 50%;
+      border: 4px solid #69708C;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 0;
+      color: #8C91A7;
+      }
+    i{
+      font-size: 26px;
+      vertical-align:middle;
+      padding-right: 5px;
+      color: #394165;
+    }
+  }
+
+  .social{
+    //@include transition(all, 0.3s, ease-in-out);
+    position:relative; 
+    top: 0em; left: 0em;
+    /* img{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }*/
+
+    .s-media{
+      @include transition(all, 0.3s, ease-in-out);
+
+      a{
+        // Initial Position
+         @include i-pos(-6em, 0, 0, 10em);
+      }
+      #social1 {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social2   {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social3  {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social4 {
+        @include transition-delay(0.5);visibility: hidden;}
+    }
+    .s-media{
+      a{
+        //each link MUST have transition.
+        @include transition(all, 0.3s, ease-in-out);
+      }
+    }
+
+    /**/
+    &:hover{
+      // Horizontal - for fullscreen
+        #social1{@include i-pos(0em, 0, 0, 10em); }
+        #social2{@include i-pos(2em, 0, 0, 10em);} 
+        #social3{@include i-pos(4em, 0, 0, 10em);}   
+        #social4{@include i-pos(6em, 0, 0, 10em);}
+        i.lg{font-size: 40px;}
+
+        // Basic Icon Styling
+        i.fi-social-github{color: black;}
+        i.fi-social-youtube{color: #de2826;}
+        i.fi-social-twitter{color: #55acee;}
+        i.fi-social-linkedin{color: #1b86bd;}
+        //
+    }
+  }
+
+/////////////////////////////////////
+
+
+
+
+
+
+
+
