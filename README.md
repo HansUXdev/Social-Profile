@@ -1,4 +1,4 @@
-> <Social-Profile> was built off of the sass-interop component (https://github.com/webcomponents/sass-interop/releases).
+> < Social-Profile > was built off of the sass-interop component (https://github.com/webcomponents/sass-interop/releases).
 
 <!-- DOCUMENTATION -->
 This repo contains the following elements:
@@ -14,13 +14,13 @@ Note: All elements are responsive and utilize Foundation 5 in some way.
 
 3). < Small-Profile >     - A small profile.
 
-3). < Exec-Profile >      - A single row, with an img, name, title and description.
+4). < Exec-Profile >      - A single row, with an img, name, title and description.
 
 
 <!-- /DOCUMENTATION -->
 
 <!--  -->
-Check out the [Demo](http://hansuxdev.github.io/Social-Profile/) 
+Check out the [Demo](http://hansuxdev.github.io/Social-Profile/) - NOT UP YET.
 
 
 
