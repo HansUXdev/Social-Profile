@@ -1,0 +1,168 @@
+@media only screen and (max-width: 767px) {
+  :host #social1 {
+    position: absolute;
+    top: 8em !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 4em !important; }
+  :host #social2 {
+    position: absolute;
+    top: 8em !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 6em !important; }
+  :host #social3 {
+    position: absolute;
+    top: 8em !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 8em !important; }
+  :host #social4 {
+    position: absolute;
+    top: 8em !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 10em !important; } }
+@media only screen and (max-width: 767px) {
+  :host .profile-card img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    position: relative;
+    top: 0em;
+    right: 0;
+    bottom: 0;
+    left: 5em; }
+  :host .profile-card h4, :host .profile-card p {
+    text-align: center; }
+  :host .profile-card .button-group .button {
+    font-size: 14px; }
+    :host .profile-card .button-group .button span {
+      font-size: 20px; } }
+:host .bump {
+  margin-top: 50px;
+  padding-right: 30px;
+  padding-left: 30px; }
+:host .profile-card {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  overflow: hidden; }
+  :host .profile-card h4 {
+    font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 30px;
+    line-height: 26px; }
+    :host .profile-card h4 span {
+      font-size: 20px;
+      color: #8C91A7;
+      display: block; }
+  :host .profile-card img {
+    border-radius: 50%;
+    border: 4px solid #69708C; }
+  :host .profile-card p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #8C91A7; }
+  :host .profile-card i {
+    font-size: 26px;
+    vertical-align: middle;
+    padding-right: 5px;
+    color: #394165; }
+:host (.social) {
+  position: relative;
+  top: 0em;
+  left: 0em;
+  /* img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }*/
+  /**/ }
+  :host (.social .s-media) {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    :host (.social .s-media a) {
+      position: absolute;
+      top: -6em;
+      right: 0;
+      bottom: 0;
+      left: 10em;
+      visibility: visible; }
+    :host (.social .s-media #social1) {
+      -webkit-transition-delay: 0.5;
+      -moz-transition: 0.5;
+      -ms-transition-delay: 0.5;
+      -o-transition-delay: 0.5;
+      transition-delay: 0.5;
+      visibility: hidden; }
+    :host (.social .s-media #social2) {
+      -webkit-transition-delay: 0.5;
+      -moz-transition: 0.5;
+      -ms-transition-delay: 0.5;
+      -o-transition-delay: 0.5;
+      transition-delay: 0.5;
+      visibility: hidden; }
+    :host (.social .s-media #social3) {
+      -webkit-transition-delay: 0.5;
+      -moz-transition: 0.5;
+      -ms-transition-delay: 0.5;
+      -o-transition-delay: 0.5;
+      transition-delay: 0.5;
+      visibility: hidden; }
+    :host (.social .s-media #social4) {
+      -webkit-transition-delay: 0.5;
+      -moz-transition: 0.5;
+      -ms-transition-delay: 0.5;
+      -o-transition-delay: 0.5;
+      transition-delay: 0.5;
+      visibility: hidden; }
+  :host (.social .s-media a) {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  :host (.social:hover #social1) {
+    position: absolute;
+    top: 0em;
+    right: 0;
+    bottom: 0;
+    left: 10em;
+    visibility: visible; }
+  :host (.social:hover #social2) {
+    position: absolute;
+    top: 2em;
+    right: 0;
+    bottom: 0;
+    left: 10em;
+    visibility: visible; }
+  :host (.social:hover #social3) {
+    position: absolute;
+    top: 4em;
+    right: 0;
+    bottom: 0;
+    left: 10em;
+    visibility: visible; }
+  :host (.social:hover #social4) {
+    position: absolute;
+    top: 6em;
+    right: 0;
+    bottom: 0;
+    left: 10em;
+    visibility: visible; }
+  :host .social:hover i.lg {
+    font-size: 40px; }
+  :host .social:hover i.fi-social-github {
+    color: black; }
+  :host .social:hover i.fi-social-youtube {
+    color: #de2826; }
+  :host .social:hover i.fi-social-twitter {
+    color: #55acee; }
+  :host .social:hover i.fi-social-linkedin {
+    color: #1b86bd; }
+
+/*# sourceMappingURL=profile.css.map */
