@@ -1,0 +1,56 @@
+@import "exec/style";		// General styling
+// @import "_visibility";	// USE?
+@import "var/Custom";
+
+//	Block Styling
+	.exec-profile {
+	  display: block;
+	  padding: 0;
+	  margin: 0 -0.625rem; }
+
+	.exec-profile:before, .exec-profile:after {
+	    content: " ";
+	    display: table; 
+	  }
+
+	.exec-profile:after {
+	    clear: both; 
+	  }
+
+	.exec-profile > li {
+	    display: block;
+	    height: auto;
+	    float: left;
+	    padding: 0 0.625rem 1.25rem; 
+	 }
+	.exec-profile > li img {
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	//.small-block-grid-1 
+	@media only screen {
+	  .exec-profile> li {
+	    width: 100%;
+	    list-style: none; }
+	  .exec-profile > li:nth-of-type(1n) {
+	    clear: none; }
+	  .exec-profile > li:nth-of-type(1n+1) {
+	    clear: both; }
+	  }
+	// .medium-block-grid-2
+	@media only screen and (min-width: 40.063em) {
+	    .exec-profile > li {
+	      width: 50%;
+	      list-style: none; }
+	    .exec-profile > li:nth-of-type(1n) {
+	      clear: none; }
+		// problems with description
+			//  .exec-profile > li:nth-of-type(1n+1) {
+			//    clear: both; 
+			// }
+	  }
+
+
+
