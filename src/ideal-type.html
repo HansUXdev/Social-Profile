@@ -1,42 +1,76 @@
-<!-- This document is for showing what the custom elements should look like in their final form  -->
+<!--//////////////////////////////////////////////////////////////////////////////////
+	This document is for showing/brain storming what the custom elements should look like in it's final form.
+///////////////////////////////////////////////////////////////////////////////-->
 
 <!-- <Exec-Profile> -->
-	<exec-profile 
-		name="Hans McMurdy" title="Front-End Developer"
-	    description="Would really love a job that involves testing custom elements for specific frameworks."
-	    img="assets/128.jpg">
+	<!-- USE after importing -->
+		<exec-profile name="Hans McMurdy" title="Front-End Developer" img="assets/128.jpg"
+		description="The description of your job title/position at said company.">
+			<!-- NEED to figure out how to the markup DRY -->
+				<!-- with SVG's and templating -->
+					<a href="https://github.com/yourlink" icon="github"></a>
+					<a href="https://twitter.com/yourlink" icon="twitter"></a>
+					<a href="https://facebook.com/yourlink" icon="facebook"></a>
+					<a href="https://linkedin.com/yourlink" icon="linkedin"></a>
 
-	    <!-- For greater customization -->
-	    	<!-- change urls -->	<!-- change icons -->
-		<a href="https://github.com" icon="github"></a>
-		<a href="https://twitter.com" icon="twitter"></a>
-		<a href="https://facebook.com" icon="facebook"></a>
-		<a href="https://facebook.com" icon="facebook"></a>
-	</exec-profile>
-
-
-<!-- <team-block> -->
-	<!--  -->
-	<Team-Block>
-		<!-- Emmet-Snippet -->
-			<!-- (team-member[name img title])*4 -->
-		<team-member name="" img="" title=""></team-member>
-		<team-member name="" img="" title=""></team-member>
-		<team-member name="" img="" title=""></team-member>
-		<team-member name="" img="" title=""></team-member>
-	</Team-Block>
+				<!-- without SVG --> 
+					<a href="https://github.com/yourlink" class="fa fa-github-square"></a>
+					<a href="https://twitter.com/yourlink" class="fa fa-twitter-square"></a>
+					<a href="https://facebook.com/yourlink" class="fa fa-facebook-square"></a>
+					<a href="https://linkedin.com/yourlink" class="fa fa-linkedin-square"></a>
+		</exec-profile>
+	<!-- END use example -->
 
 
+	<!-- Structure in Shadow -->
+		<polymer-element name="exec-profile" attributes="name img description title">
+		    <template>
+		        <!-- Main scss file after complied -->
+		        <link rel="stylesheet" href="../style/css/exec-profile.css">
 
-<Social-Profile img="img/profile" name="hans">
-	<a href="https://github.com" icon="github"></a>
-	<a href="https://twitter.com" icon="twitter"></a>
-	<a href="https://facebook.com" icon="facebook"></a>
-</Social-Profile>
+		        <!-- ////////////////////////////////////////////
+		        	FONT-ICONS = REPLACED with SVGs & Template IF 
+		        					OR 
+		        	referenced on main page (EX: index.html
+		        /////////////////////////////////////////////////  -->
+		        	
+		        <!-- insertion points / distribution-->
+				<div class="exec-profile social">
+		            <li>
+		                <h4>{{name}}</h4>
+		                <img src="{{img}}">
+		            </li>
+		            <li class="info">
+		                <h4>{{title}}</h4>
+		                <p class="description">
+		                    {{description}} 
+		                </p>
+		            </li>
 
 
-<Profile-small img="img/profile">
-	<a href="https://github.com" icon="github"></a>
-	<a href="https://twitter.com" icon="twitter"></a>
-	<a href="https://facebook.com" icon="facebook"></a>
-</Profile-small>
+		            <!-- HOW? ... brain fart :'(  -->
+					<!-- Make this DRY for the end result -->
+			            <div class="s-media-mobile">
+			            	<content select="a" id="social1"></content>
+			            	<content select="a" id="social2"></content>
+			            	<content select="a" id="social3"></content>
+			            	<content select="a" id="social4"></content> 
+			            </div>
+
+			            <div class="s-media">
+			            	<!-- allow class to be customized -->
+			            	<content select="a" id="social1"></content>
+			            	<content select="a" id="social2"></content>
+			            	<content select="a" id="social3"></content>
+			            	<content select="a" id="social4"></content> 
+			            </div>		
+				</div>
+
+				<!-- Bring the content to lightDOM -->
+				<content></content>
+
+		    </template>
+
+		    <script>Polymer('exec-profile', {});</script>
+		</polymer-element>
+	<!-- END shadow -->
