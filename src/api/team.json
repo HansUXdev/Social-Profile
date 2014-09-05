@@ -4,7 +4,6 @@
 		"fullname": "First Last",
 		"title": "CEO, Founder",
 		"profile-img": "../imgs/128.jpg",
-		"description": "",
 
 		// icons
 		"social-a": "facebook",
@@ -23,7 +22,6 @@
 		"fullname": "First Last",
 		"title": "Chief Technology Officer",
 		"profile-img": "../imgs/128.jpg",
-		"description": "",
 		
 		"social-a": "",
 		"social-b": "",
@@ -40,7 +38,6 @@
 		"fullname": "First M. Last",
 		"title": "Content Strategy Director",
 		"profile-img": "../imgs/128.jpg",
-		"description": "",
 		
 		"social-a": "",
 		"social-b": "",

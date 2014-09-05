@@ -1,0 +1,71 @@
+// @import "../../../team-var";    // Import for quick customizations
+// @import "../cb";                // Cross-browser mixins to void vendor specifc nonsense
+
+@import "team-mixins";              // Simple mixin library
+// @import "media";
+
+
+.team-profile{
+
+  // team-member ADD block-grid
+  .team-member{
+
+  }
+  
+  // Nested inside of team-profile to avoid conflicts
+  // Defines icon animation
+  > .social{
+    position:relative; top: 0em; left: 0em;
+    .s-media{
+      @include transition(all, 0.3s, ease-in-out);
+
+      a{
+        height: 25px;
+        width: 25px;
+        // Initial Position
+         @include i-pos(-6em, 0, 0, 10em);
+      }
+      #social1 {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social2   {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social3  {
+        @include transition-delay(0.5);visibility: hidden;}
+      #social4 {
+        @include transition-delay(0.5);visibility: hidden;}
+    }
+    .s-media{
+      a{
+        //each link MUST have transition.
+        @include transition(all, 0.3s, ease-in-out);
+      }
+    }
+
+    /**/
+    &:hover{
+        #social1{@include i-pos(5em, 0, 0, 35%); }
+        #social2{@include i-pos(6em, 0, 0, 35%);} 
+        #social3{@include i-pos(7em, 0, 0, 35%);}   
+        #social4{@include i-pos(8em, 0, 0, 35%);}
+        // Define icon-size
+        #social1, #social2, #social3, #social4 > i{font-size: 25px;}   // $icon-size
+    }
+  }
+}
+
+// Changes the visability of the icons
+  @media only screen and (max-width: 40em) { 
+    /* hide hover social media on mobile */ 
+    .s-media{display: none;} 
+
+    .s-media-mobile{display: block !important;}
+    .s-media-mobile{
+      position: inherit;
+      left: 40%;
+
+      a{}
+      i{} //  style icons
+
+    }
+
+  } 

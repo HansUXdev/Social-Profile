@@ -1,0 +1,128 @@
+
+ // Position mixins
+     @mixin pos ($pos, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+      position: $pos;     // relitive, absolute, fixed, etc
+      top: $top;          // 
+      right: $right;      // 
+      bottom: $bottom;    // 
+      left: $left;        // 
+      }
+        @mixin pos-r ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+          position: relative;
+          top: $top;
+          right: $right;
+          bottom: $bottom;
+          left: $left;
+        }
+        @mixin pos-a ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+          position: absolute;
+          top: $top;
+          right: $right;
+          bottom: $bottom;
+          left: $left;
+        }
+        @mixin imp-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+          position: absolute;
+          top: $top !important;
+          right: $right !important;
+          bottom: $bottom !important;
+          left: $left !important;
+        }
+        // Position-Visible
+        @mixin i-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+          position: absolute;
+          top: $top;
+          right: $right;
+          bottom: $bottom;
+          left: $left;
+          visibility: visible;
+        }
+    // Height & Width
+      @mixin hw ($h, $w){
+        height: $h; width: $w;
+      }
+      @mixin min-hw($min-height, $min-width) {
+          min-height: $min-height;
+          min-width:   $min-width;
+      }
+      @mixin max-hw($max-height, $max-width) {
+            max-height: $max-height;
+            max-width:   $max-width;
+        }
+      // Doesn't work -- Try boolean logic
+        // @mixin mm-hw($mm,$mmh $mmw) {
+        //       $mm-height: $mmh;
+        //       $mm-width:   $mmw;
+        //   }
+
+    // Parallax effects
+      @mixin bg-size($bg-prop) {
+         background-size: $bg-prop;
+        -webkit-background-size: $bg-prop;
+        -moz-background-size: $bg-prop;
+        -o-background-size: $bg-prop;
+      }
+
+
+
+      // Image
+        @mixin parallax($bg-url) {
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background:url($bg-url) no-repeat center center fixed;
+        }
+
+      // Video
+        // doesn't work
+
+        // @mixin bg-vid($vid-url, $vid-bg, $vid-index){                      
+        //   background:url($vid-url) no-repeat; // no repeat
+        //   background-size: $vid-bg;             // cover
+        //   z-index: $vid-index; // -100
+        // }
+
+
+    ///////// FONT \\\\\\\\\\\\\\\\\\\\\
+
+    // rem font size with pixel fallback
+      // http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+      @function calculateRem($size) {
+        $remSize: $size / 16px;
+        @return $remSize * 1rem;
+      }
+
+      @mixin font-size($size) {
+        font-size: $size;
+        font-size: calculateRem($size);
+      }
+
+    @mixin font-god($f-family, $f-weight, $f-color, $size){
+      font-family: $f-family;
+      font-weight: $f-weight;
+      color: $f-color;
+      font-size: $size;
+      font-size: calculateRem($size);
+    }
+
+
+    @mixin transition($transition-property, $transition-time, $method) {
+        -webkit-transition: $transition-property $transition-time $method;
+        -moz-transition: $transition-property $transition-time $method;
+        -ms-transition: $transition-property $transition-time $method;
+        -o-transition: $transition-property $transition-time $method;
+        transition: $transition-property $transition-time $method;
+    }
+    @mixin transition-delay($transition-time) {
+        -webkit-transition-delay:  $transition-time;
+        -moz-transition:  $transition-time;
+        -ms-transition-delay:  $transition-time;
+        -o-transition-delay:  $transition-time;
+        transition-delay:  $transition-time;
+    }
+
+
+   
+
+
