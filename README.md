@@ -1,60 +1,39 @@
-> < Social-Profile > was built off of the sass-interop component (https://github.com/webcomponents/sass-interop/releases).
-
-<!-- DOCUMENTATION -->
-This repo contains the following elements:
-<!-- Add tables for attributes -->
-
-Note: All elements are responsive and utilize Foundation 5 in some way.
+> < team-block > is custom element designed to make it faster to build professional about pages featuring a companies team.
 
 
-1). < Test-Element >      - obviously for testing...
+## File Structure
 
-2). < Social-Profile >    - An element utilizing the 
-        < social-media > element (by @hejty https://github.com/hejty/social-media)
-
-3). < Small-Profile >     - A small profile.
-
-4). < Exec-Profile >      - A single row, with an img, name, title and description.
-
-
-<!-- /DOCUMENTATION -->
-
-<!--  -->
-Check out the [Demo](http://hansuxdev.github.io/Social-Profile/) - NOT UP YET.
+Versions                    | Details                                                   |                         
+---                         | ---                                                       |    
+-- `index.html`             | Self explanatory                                          |                        
+-- `_team-var.scss`         | Used to make quick changes to the element(s).             |                
+---`src`                    | MAIN folder.                                              |                          
+---->`ideal-type.html`      | Used to outline/brain storm how markup should look in lightDom and ShadowDOM |  
+---->`team-profile.html`    | Used for version 1 & 2. Then refactored into team-member. |   
+---->`team-member.html`     | Individual member block.                                  |  
+---->`team-block.html`      | Imports above element and repeats according to team.json. |  
+---->`team-service.html`    | Used to call ajax and the api.                            |
+---->`api`                  | Folder containing your .json files.                       |
+------>`team.json-`         | Define.                                                   |
 
 
 
+## Road Map
 
+Versions        | Details                                                   | T0-DO                         | Status
+---             | ---                                                       | ---                           | ---
+`Version 1`     | Will be built in with vanilla HTML then refactored.       | `refactor sass`               | Started
+`Version 2`     | Will be a working concept with four members.              | `32`                          | Started
+`Version 3`     | Will START implimenting templating and customization      | 'team.json', 'team-services', | Started
+`Version 4`     | Will be the completed version.                            | - Merge with master           | Incomplete
 
-## Getting started
+## Elements
 
-In order to run it locally you'll need to fetch some dependencies using [npm](https://www.npmjs.org/) and [RubyGems](https://rubygems.org/).
-
-* Install [Bower](http://bower.io/):
-
-    ```sh
-    $ [sudo] npm install -g bower
-    ```
-
-* Install [Sass](http://sass-lang.com/):
-
-    ```sh
-    $ [sudo] gem install sass
-    ```
-
-* Install local dependencies:
-
-    ```sh
-    $ bower install
-    ```
-
-* Invoke the compiler to output the CSS file:
-
-    ```sh
-    $ sass --scss src/my-element.scss src/my-element.css
-    ```
-
-
+Element         | Attributes                                              | Options                             
+---             | ---                                                     | ---                                 
+`team-block`    | `type`                                                  | `hover-icon`, `hover-description`   
+`team-member`   | -                                                       | -                                
+                               
 
 
 
@@ -66,12 +45,3 @@ In order to run it locally you'll need to fetch some dependencies using [npm](ht
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-
-
-## History
-This component was inspired by the work done from my previous boss <!-- @ thekameronw -->.
-
-## License
-None?
-
-<!-- [MIT License](http://webcomponentsorg.mit-license.org/) © WebComponents.org -->

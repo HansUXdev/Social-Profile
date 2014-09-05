@@ -1,0 +1,55 @@
+[
+	{
+		"uid": 1,
+		"fullname": "First Last",
+		"title": "CEO, Founder",
+		"profile-img": "../imgs/128.jpg",
+		"description": "",
+
+		// icons
+		"social-a": "facebook",
+		"social-b": "github",
+		"social-c": "twitter",
+		"social-d": "linkedin",
+
+		// links
+		"social-url-a": "www.facebook.com",
+		"social-url-b": "www.github.com",
+		"social-url-c": "www.twitter.com",
+		"social-url-d": "www.linkedin.com"
+	},
+	{
+		"uid": 2,
+		"fullname": "First Last",
+		"title": "Chief Technology Officer",
+		"profile-img": "../imgs/128.jpg",
+		"description": "",
+		
+		"social-a": "",
+		"social-b": "",
+		"social-c": "",
+		"social-d": "",
+
+		"social-url-a": "",
+		"social-url-b": "",
+		"social-url-c": "",
+		"social-url-d": ""
+	},
+	{
+		"uid": 3,
+		"fullname": "First M. Last",
+		"title": "Content Strategy Director",
+		"profile-img": "../imgs/128.jpg",
+		"description": "",
+		
+		"social-a": "",
+		"social-b": "",
+		"social-c": "",
+		"social-d": "",
+
+		"social-url-a": "",
+		"social-url-b": "",
+		"social-url-c": "",
+		"social-url-d": ""
+	}
+]

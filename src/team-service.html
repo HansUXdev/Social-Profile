@@ -1,0 +1,29 @@
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../components/core-ajax/core-ajax.html">
+
+<polymer-element name="team-service" attributes="team"><!-- team originally = posts -->
+	<template>
+		<style>:host {display: none;}</style>
+
+		<!-- CHANGE = on-core-response ?-->
+	    <core-ajax id="ajax"
+	      auto
+	      url="api/team.json"
+
+	      on-core-response="{{postsLoaded}}"
+
+	      handleAs="json">
+	    </core-ajax>
+
+	</template>
+	<script> 
+	// I really need to get better at javascript so i can finish this.
+		// team = posts (from example)
+		Polymer('team-service',{
+			created: function(){	
+				this.team =[];
+			},
+		});
+	</script>
+
+</polymer-element>
