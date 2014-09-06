@@ -12,10 +12,13 @@ Versions               | Details                                                
 ---                    | ---                                                       |    
  `index.html`          | Self explanatory                                          |                        
  `_exec-var.scss`      | Used to make quick changes to the element(s).             |                
+ `_team-var.scss`      | Used to make quick changes to the element(s).             |  
 ---`src`               | MAIN folder.                                              |                          
 `ideal-type.html`      | Used to outline/brain storm how markup should look in lightDom and ShadowDOM |  
-`exec-profile.html`    | Used for version 1 & 2. Then refactored into team-member. |   
-
+`exec-profile.html`    |        |   
+`team-profile.html`    |        |
+`team-block.html`      |        |
+`team-member.html`    |         |
 
 
 
