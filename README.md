@@ -3,18 +3,18 @@
 
 ## File Structure
 
-Versions                    | Details                                                   |                         
----                         | ---                                                       |    
- `index.html`             | Self explanatory                                          |                        
- `_team-var.scss`         | Used to make quick changes to the element(s).             |                
----`src`                    | MAIN folder.                                              |                          
+Versions               | Details                                                   |                         
+---                    | ---                                                       |    
+ `index.html`          | Self explanatory                                          |                        
+ `_team-var.scss`      | Used to make quick changes to the element(s).             |                
+---`src`               | MAIN folder.                                              |                          
 `ideal-type.html`      | Used to outline/brain storm how markup should look in lightDom and ShadowDOM |  
 `team-profile.html`    | Used for version 1 & 2. Then refactored into team-member. |   
 `team-member.html`     | Individual member block.                                  |  
 `team-block.html`      | Imports above element and repeats according to team.json. |  
 `team-service.html`    | Used to call ajax and the api.                            |
----->`api`                  | Folder containing your .json files.                       |
-`team.json-`         | Defines the number of team members and the content.       |
+---->`api`             | Folder containing your .json files.                       |
+`team.json-`           | Defines the number of team members and the content.       |
 
 
 
@@ -22,8 +22,8 @@ Versions                    | Details                                           
 
 Versions        | Details                                                   | T0-DO                         | Status
 ---             | ---                                                       | ---                           | ---
-`Version 1`     | Will be built in with vanilla HTML then refactored.       | `refactor sass`               | Started
-`Version 2`     | Will be a working concept with four members.              | `lots of shit`                          | Started
+`Version 1`     | Will be built in with vanilla HTML then refactored.       | `refactor sass`               | Finished
+`Version 2`     | Will be a working concept with four members.              | `lots of shit`                | Started
 `Version 3`     | Will START implimenting templating and customization      | 'team.json', 'team-services', | Started
 `Version 4`     | Will be the completed version.                            | - Merge with master           | Incomplete
 

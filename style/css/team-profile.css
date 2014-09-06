@@ -1,0 +1,358 @@
+/*	INSTRUCTIONS
+*	1). Install the following:
+*		(If you haven't used sass before here are some quick links:)
+*	2). Bower Install
+*/
+/* line 3, ../scss/team/_team-block.scss */
+[class*="team-block-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+}
+
+/* line 7, ../scss/team/_team-block.scss */
+[class*="team-block-"]:before, [class*="team-block-"]:after {
+  content: " ";
+  display: table;
+}
+
+/* line 10, ../scss/team/_team-block.scss */
+[class*="team-block-"]:after {
+  clear: both;
+}
+
+/* line 12, ../scss/team/_team-block.scss */
+[class*="team-block-"] > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+
+@media only screen {
+  /* line 19, ../scss/team/_team-block.scss */
+  .team-block-grid > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 22, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 24, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 30, ../scss/team/_team-block.scss */
+  .team-block-grid > li {
+    width: 35%;
+    list-style: none;
+  }
+
+  /* line 33, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 35, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 41, ../scss/team/_team-block.scss */
+  .team-block-grid > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 44, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 46, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+}
+/* line 14, ../scss/team/_style.scss */
+.team-profile {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+/* line 18, ../scss/team/_style.scss */
+.team-profile h1 {
+  text-align: center;
+}
+/* line 21, ../scss/team/_style.scss */
+.team-profile h4 {
+  font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #070707;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+}
+/* line 28, ../scss/team/_style.scss */
+.team-profile h4 span {
+  font-size: 20px;
+  color: #8C91A7;
+  display: block;
+}
+/* line 34, ../scss/team/_style.scss */
+.team-profile img {
+  border-radius: 50%;
+  border: 4px solid #69708C;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 45, ../scss/team/_style.scss */
+.team-profile p {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #8C91A7;
+}
+/* line 50, ../scss/team/_style.scss */
+.team-profile i {
+  font-size: 26px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+/* line 58, ../scss/team/_style.scss */
+.social {
+  position: relative;
+  top: 0em;
+  left: 0em;
+  /* img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }*/
+  /**/
+}
+/* line 68, ../scss/team/_style.scss */
+.social .s-media {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 71, ../scss/team/_style.scss */
+.social .s-media a {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 8em;
+  right: 0;
+  bottom: 0;
+  left: 10em;
+  visibility: visible;
+  overflow: hidden;
+}
+/* line 78, ../scss/team/_style.scss */
+.social .s-media #social1 {
+  -webkit-transition-delay: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition-delay: 0.5;
+  -o-transition-delay: 0.5;
+  transition-delay: 0.5;
+  visibility: hidden;
+}
+/* line 80, ../scss/team/_style.scss */
+.social .s-media #social2 {
+  -webkit-transition-delay: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition-delay: 0.5;
+  -o-transition-delay: 0.5;
+  transition-delay: 0.5;
+  visibility: hidden;
+}
+/* line 82, ../scss/team/_style.scss */
+.social .s-media #social3 {
+  -webkit-transition-delay: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition-delay: 0.5;
+  -o-transition-delay: 0.5;
+  transition-delay: 0.5;
+  visibility: hidden;
+}
+/* line 84, ../scss/team/_style.scss */
+.social .s-media #social4 {
+  -webkit-transition-delay: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition-delay: 0.5;
+  -o-transition-delay: 0.5;
+  transition-delay: 0.5;
+  visibility: hidden;
+}
+/* line 88, ../scss/team/_style.scss */
+.social .s-media a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 97, ../scss/team/_style.scss */
+.social:hover #social1 {
+  position: absolute;
+  top: 4em;
+  right: 0;
+  bottom: 0;
+  left: 85%;
+  visibility: visible;
+}
+/* line 98, ../scss/team/_style.scss */
+.social:hover #social2 {
+  position: absolute;
+  top: 5em;
+  right: 0;
+  bottom: 0;
+  left: 85%;
+  visibility: visible;
+}
+/* line 99, ../scss/team/_style.scss */
+.social:hover #social3 {
+  position: absolute;
+  top: 6em;
+  right: 0;
+  bottom: 0;
+  left: 85%;
+  visibility: visible;
+}
+/* line 100, ../scss/team/_style.scss */
+.social:hover #social4 {
+  position: absolute;
+  top: 7em;
+  right: 0;
+  bottom: 0;
+  left: 85%;
+  visibility: visible;
+}
+/* line 101, ../scss/team/_style.scss */
+.social:hover #social1, .social:hover #social2, .social:hover #social3, .social:hover #social4 {
+  font-size: 25px;
+}
+/* line 105, ../scss/team/_style.scss */
+.social:hover #social2 {
+  color: black;
+}
+/* line 107, ../scss/team/_style.scss */
+.social:hover #social4 {
+  color: red;
+}
+
+/* line 113, ../scss/team/_style.scss */
+.s-media-row a {
+  height: 25px;
+  width: 25px;
+}
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  /* hide hover social media on mobile */
+  /* line 135, ../scss/team/_style.scss */
+  .s-media {
+    display: none;
+  }
+
+  /* line 137, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: block !important;
+  }
+
+  /* line 138, ../scss/team/_style.scss */
+  .s-media-mobile {
+    position: inherit;
+    left: 30%;
+  }
+  /* line 143, ../scss/team/_style.scss */
+  .s-media-mobile .media1 {
+    color: #344CBD;
+  }
+  /* line 144, ../scss/team/_style.scss */
+  .s-media-mobile .media2 {
+    color: black;
+  }
+  /* line 145, ../scss/team/_style.scss */
+  .s-media-mobile .media3 {
+    color: #394165;
+  }
+  /* line 146, ../scss/team/_style.scss */
+  .s-media-mobile .media4 {
+    color: red;
+  }
+}
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 160, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: none !important;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 64.063em) {
+  /* line 165, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: none !important;
+  }
+}
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  /* line 169, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: none !important;
+  }
+}
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 90.063em) {
+  /* line 174, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: none !important;
+  }
+}
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  /* line 178, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: none !important;
+  }
+}
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 120.063em) {
+  /* line 183, ../scss/team/_style.scss */
+  .s-media-mobile {
+    display: none !important;
+  }
+}
+/* min-width 1921px, xxlarge screens */
+@media only screen and (max-width: 767px) {
+  /* line 191, ../scss/team/_style.scss */
+  .team-profile img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  /* line 197, ../scss/team/_style.scss */
+  .team-profile h4, .team-profile p {
+    text-align: center;
+  }
+  /* line 201, ../scss/team/_style.scss */
+  .team-profile .button-group .button {
+    font-size: 14px;
+  }
+  /* line 203, ../scss/team/_style.scss */
+  .team-profile .button-group .button span {
+    font-size: 20px;
+  }
+}

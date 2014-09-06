@@ -13,6 +13,8 @@
     <script src="components/platform/platform.js"></script>
 
     <link rel="import" href="src/team-profile.html">
+    <link rel="import" href="src/team-member.html">
+    <link rel="import" href="src/team-block.html">
 
 
     <!-- fonts -->
@@ -20,7 +22,7 @@
 
 
     <!-- Test Vanillia -->
-        <!-- <link rel="stylesheet" href="../style/css/exec-profile.css"/> -->
+        <link rel="stylesheet" href="style/css/team-profile.css"/>
 
         <!-- original -->
         <!-- <link rel="stylesheet" href="../old/framework/css/profile.css"/> -->
@@ -30,13 +32,30 @@
 <body>
 
 <!-- Test Vanillia -->
+    <!-- .row>.team-profile -->
+
+
+
         <div class="row">
-            <div class="team-profile">
-                <!-- merge with ".team-profile" -->
-                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+            <div class="">
+                <ul class="team-block-grid team-profile">
                     <li class="team-member social">
                         <h1>{{Name}}</h1>
-                        <img src="{{img}}">
+                        <img src="/assets/128.jpg">
+                            <div class="s-media-mobile">
+                                <a href="www.linkedin.com" class="media1">
+                                    <i class="fa fa-linkedin-square"></i>
+                                </a>
+                                <a href="www.github.com" class="media2" >
+                                    <i class="fa fa-github-square"></i> 
+                                </a>
+                                <a href="" class="media3">
+                                    <i class="fa fa-twitter-square"></i>
+                                </a>
+                                <a href="#" class="media4">
+                                    <i class="fa fa-youtube-square"></i>
+                                </a> 
+                            </div>
                         <h4>{{title}}</h4>
 
                         <div class="s-media">
@@ -45,30 +64,10 @@
                             <a href="#" id="social3" class="fa fa-twitter-square"></a>
                             <a href="#" id="social4" class="fa fa-youtube-square"></a> 
                         </div>
-                        <div class="s-media-mobile">
-                            <a href="www.linkedin.com" class="media2">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                            <a href="www.github.com" class="media2" >
-                                <i class="fa fa-github-square"></i> 
-                            </a>
-                            <a href="" class="media3">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a href="#" class="media4">
-                                <i class="fa fa-youtube-square"></i>
-                            </a> 
-                        </div>
                     </li>
-                    <!-- etc for each -->
-                    <li class="team-member social"></li>
-                    <li class="team-member social"></li>
-                    <li class="team-member social"></li>
                 </ul>
             </div>
         </div>
-
-
 <!--  -->
 
 
@@ -76,10 +75,18 @@
     <!--    <exec-profile> attributes = name img description title     -->
 
     <h1>Testing <code> < Team-Profile > </code></h1>
-        <team-profile></team-profile>
+        <team-profile name="Hans McMurdy" title="Front-End Developer"></team-profile>
 
-
+    <h1>Testing <code> < Team-member > </code></h1>
+        <team-member></team-member>
     <!--  -->
     <!-- <social-profile></social-profile>  -->
+    <h1>Testing <code> < Team-block > with nested < Team-member> </code></h1>
+    <team-block>
+        <team-member></team-member>
+        <team-member></team-member>
+        <team-member></team-member>
+        <team-member></team-member>
+    </team-block>
 </body>
 </html>

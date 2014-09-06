@@ -1,0 +1,82 @@
+/*	INSTRUCTIONS
+*	1). Install the following:
+*		(If you haven't used sass before here are some quick links:)
+*	2). Bower Install
+*/
+/* line 3, ../scss/team/_team-block.scss */
+[class*="team-block-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+}
+
+/* line 7, ../scss/team/_team-block.scss */
+[class*="team-block-"]:before, [class*="team-block-"]:after {
+  content: " ";
+  display: table;
+}
+
+/* line 10, ../scss/team/_team-block.scss */
+[class*="team-block-"]:after {
+  clear: both;
+}
+
+/* line 12, ../scss/team/_team-block.scss */
+[class*="team-block-"] > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+
+@media only screen {
+  /* line 19, ../scss/team/_team-block.scss */
+  .team-block-grid > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 22, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 24, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 30, ../scss/team/_team-block.scss */
+  .team-block-grid > li {
+    width: 35%;
+    list-style: none;
+  }
+
+  /* line 33, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 35, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 41, ../scss/team/_team-block.scss */
+  .team-block-grid > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 44, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(1n) {
+    clear: none;
+  }
+
+  /* line 46, ../scss/team/_team-block.scss */
+  .team-block-grid > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+}

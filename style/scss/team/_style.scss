@@ -1,5 +1,11 @@
-// @import "../../../team-var";    // Import for quick customizations
+@import "../../../team-var";    // Import for quick customizations
 // @import "../cb";                // Cross-browser mixins to void vendor specifc nonsense
+
+
+
+
+
+
 
 @import "team-mixins";              // Simple mixin library
 // @import "media";
@@ -9,17 +15,16 @@
   padding-top: 15px;
   padding-bottom: 0px;
   overflow:hidden;
+  h1{
+    text-align: center;
+  }
   h4{
     font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-
     color: #070707;
-
-    font-size: 30px;
+    font-size:30px;
     line-height:26px;
-
     text-align: center;
-
     span{
       font-size: 20px;
       color: #8C91A7;
@@ -28,8 +33,14 @@
   }
   img{
     // img height & width
-    border-radius: 50%;           // $img-radius
-    border: 4px solid #69708C;    // $img-border
+    border-radius: $img-radius;   // $img-radius
+    border: $img-border;          // $img-border
+    
+    // center image
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   p{
     font-size: 16px;
@@ -40,7 +51,7 @@
     font-size: 26px;
     vertical-align:middle;
     padding-right: 5px;
-    color: #394165;
+    
   }
 }
 
@@ -60,8 +71,9 @@
     a{
       height: 25px;
       width: 25px;
-      // Initial Position
-       @include i-pos(-6em, 0, 0, 10em);
+      // Initial Position (should originate from middle)
+       @include i-pos(8em, 0, 0, 10em); 
+       overflow: hidden;                //fixes buring action
     }
     #social1 {
       @include transition-delay(0.5);visibility: hidden;}
@@ -82,11 +94,17 @@
   /**/
   &:hover{
     // Horizontal - for fullscreen
-      #social1{@include i-pos(5em, 0, 0, 35%); }
-      #social2{@include i-pos(6em, 0, 0, 35%);} 
-      #social3{@include i-pos(7em, 0, 0, 35%);}   
-      #social4{@include i-pos(8em, 0, 0, 35%);}
+      #social1{@include i-pos(4em, 0, 0, 85%); }
+      #social2{@include i-pos(5em, 0, 0, 85%);} 
+      #social3{@include i-pos(6em, 0, 0, 85%);}   
+      #social4{@include i-pos(7em, 0, 0, 85%);}
       #social1, #social2, #social3, #social4 {font-size: 25px;}
+
+      // Color of Icons
+      // #social1{color:;}
+      #social2{color:$social-icon-b;} // wont import $social-icon-b
+      // #social3{color:;}
+      #social4{color:red;}
   }
 }
 
@@ -119,13 +137,17 @@
     .s-media-mobile{display: block !important;}
     .s-media-mobile{
       position: inherit;
-      left: 40%;
+      left: 30%;
 
+      // Style icons
+        .media1{color:$social-icon-a;}
+        .media2{color:$social-icon-b;} // wont import $social-icon-b
+        .media3{color:$social-icon-c;}
+        .media4{color:$social-icon-d;}
       a{}
       i{} //  style icons
 
     }
-
   } 
 
 
@@ -163,21 +185,14 @@
 
 
 
-  // @media only screen and (max-width: 767px){
-  //   #social1{@include imp-pos(8em, 0, 0, 4em); }
-  //   #social2{@include imp-pos(8em, 0, 0, 6em);} 
-  //   #social3{@include imp-pos(8em, 0, 0, 8em);}   
-  //   #social4{@include imp-pos(8em, 0, 0, 10em);}
-  // }
-
   // Media Querries
   @media only screen and (max-width: 767px){
-    .exex-profile{
+    .team-profile{
       img{
        margin-left:auto;
        margin-right:auto;
        width:40%;
-       @include pos-r(0em, 0, 0, 5em);
+       // @include pos-r(0em, 0, 0, 5em);
       }
       h4, p{
         text-align: center;
