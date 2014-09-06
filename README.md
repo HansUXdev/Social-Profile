@@ -1,58 +1,41 @@
-> < Social-Profile > was built off of the sass-interop component (https://github.com/webcomponents/sass-interop/releases).
-
-<!-- DOCUMENTATION -->
-This repo contains the following elements:
-<!-- Add tables for attributes -->
-
-Note: All elements are responsive and utilize Foundation 5 in some way.
+> STILL IN PROGRESS CHECK OTHER BRANCHES
 
 
-1). < Test-Element >      - obviously for testing...
 
-2). < Social-Profile >    - An element utilizing the 
-        < social-media > element (by @hejty https://github.com/hejty/social-media)
-
-3). < Small-Profile >     - A small profile.
-
-4). < Exec-Profile >      - A single row, with an img, name, title and description.
+> < Exec-Profile >.
 
 
-<!-- /DOCUMENTATION -->
+> < Team-Block >.
+## File Structure
 
-<!--  -->
-Check out the [Demo](http://hansuxdev.github.io/Social-Profile/) - NOT UP YET.
+Versions               | Details                                                   |                         
+---                    | ---                                                       |    
+ `index.html`          | Self explanatory                                          |                        
+ `_exec-var.scss`      | Used to make quick changes to the element(s).             |                
+---`src`               | MAIN folder.                                              |                          
+`ideal-type.html`      | Used to outline/brain storm how markup should look in lightDom and ShadowDOM |  
+`exec-profile.html`    | Used for version 1 & 2. Then refactored into team-member. |   
 
 
 
 
+## Road Map
 
-## Getting started
+Versions        | Details                                                   | T0-DO                         | Status
+---             | ---                                                       | ---                           | ---
+`Version 1`     | Will be built in with vanilla HTML then refactored.       | `refactor scss`               | Finished
+`Version 2`     | Will have improved light dom interface for links/icons    | -                             | In Progress
+`Version 3`     | Will be the completed version.                            | - Merge with master           | Incomplete
 
-In order to run it locally you'll need to fetch some dependencies using [npm](https://www.npmjs.org/) and [RubyGems](https://rubygems.org/).
+## Elements
 
-* Install [Bower](http://bower.io/):
+Element         | Attributes                                              | Options                             
+---             | ---                                                     | ---                                 
+`Exec-Profile   | `name`, 'img', 'title', 'description'                   | `hover-icon`, `hover-description`  
+`team-block`    | `type`                                                  | `hover-icon`, `hover-description`   
+`team-member`   | -                                                       | -                                
+                               
 
-    ```sh
-    $ [sudo] npm install -g bower
-    ```
-
-* Install [Sass](http://sass-lang.com/):
-
-    ```sh
-    $ [sudo] gem install sass
-    ```
-
-* Install local dependencies:
-
-    ```sh
-    $ bower install
-    ```
-
-* Invoke the compiler to output the CSS file:
-
-    ```sh
-    $ sass --scss src/my-element.scss src/my-element.css
-    ```
 
 
 
