@@ -1,5 +1,37 @@
 <!-- This document is for showing what the custom elements should look like in their final form  -->
 
+
+
+<!-- IDEAL example of TEAM-member -->
+	<polymer-element name="team-members">
+	  <template>
+	  	<!-- import the template you wish to repeat -->
+	    <template import="team-member.html" repeat="{{ members in team }}">
+	      	{{ members }}
+	      	<!-- define the json file used to parse html -->
+		    <core-ajax id="ajax" auto 
+		    	url="api/team.json"
+		    	on-core-response="{{members}}"
+		    	handleAs="json">
+		    </core-ajax>	
+	    </template>
+	  </template>
+	  <script>
+	    Polymer('team-members', {
+	    });
+	  </script>
+	</polymer-element>
+
+<!--  -->
+
+
+
+
+
+
+
+
+
 <!-- <team-Profile> -->
 
 	<!--  -->
