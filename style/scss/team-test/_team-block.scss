@@ -1,0 +1,51 @@
+@import "../../../team-var";    // Import for quick customizations
+
+[class*="team-block-"] {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem; }
+  [class*="team-block-"]:before, [class*="team-block-"]:after {
+    content: " ";
+    display: table; }
+  [class*="team-block-"]:after {
+    clear: both; }
+  [class*="team-block-"] > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem; }
+
+@media only screen {
+   .team-block-grid > li {
+    width: $mobile-bp;
+    list-style: none; }
+    .team-block-grid > li:nth-of-type(1n) {
+      clear: none; }
+    .team-block-grid > li:nth-of-type(2n+1) {
+      clear: both; }
+
+}
+
+@media only screen and (min-width: 40.063em) {
+    .team-block-grid > li {
+    width: $tablet-bp;         // originally 50%
+    list-style: none; }
+    .team-block-grid > li:nth-of-type(1n) {
+      clear: none; }
+    .team-block-grid > li:nth-of-type(2n+1) {
+      clear: both; }
+}
+
+
+@media only screen and (min-width: 64.063em) {
+    .team-block-grid > li {
+    width: $desktop-bp;
+    list-style: none; }
+    .team-block-grid > li:nth-of-type(1n) {
+      clear: none; }
+    .team-block-grid > li:nth-of-type(5n+1) {
+      clear: both; }
+}
+
+
+

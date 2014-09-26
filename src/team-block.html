@@ -8,20 +8,17 @@
 
 <!-- Define your custom element -->
 <polymer-element name="team-block" attributes="">
-<!-- attributes="href name img" -->
+
     <template>
-        <!-- fonts -->
-        <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" shim-shadowdom>
 
 
-        <link rel="stylesheet" href="../style/css/team-block.css">
+        <link rel="stylesheet" href="../style/css/team-block.css" shim-shadowdom>
 
         <div class="row team-block social">
-            <!-- Loop ? -->
-                <li>
-                    <team-member></team-member>
-                </li>
+            <li>
+                <team-member></team-member>
+            </li>
         </div>
 
         <template>
@@ -30,7 +27,7 @@
 
     </template>
 
-    <script>Polymer('team-block','team-member' {});</script>
+    <script>Polymer('team-block', {});</script>
 
 
 </polymer-element>
